@@ -275,14 +275,6 @@ export default function GameBoard() {
         ctx.textAlign = "center"
         ctx.textBaseline = "middle"
         ctx.fillText((index + 1).toString(), midX, midY)
-
-        // Ajouter le nombre de citoyens qui demandent ce trajet
-        ctx.font = "9px sans-serif"
-        ctx.fillStyle = "#ffffff"
-        ctx.strokeStyle = "#000000"
-        ctx.lineWidth = 2
-        ctx.strokeText(`${route.count}`, midX, midY + 15)
-        ctx.fillText(`${route.count}`, midX, midY + 15)
       })
     }
 
@@ -830,25 +822,6 @@ export default function GameBoard() {
       >
         {showDestinations ? <>Masquer trajets</> : <>Afficher trajets</>}
       </button>
-
-      {/* Légende pour les trajets prioritaires quand ils sont affichés */}
-      {showDestinations && (
-        <div className="absolute top-16 right-4 bg-white p-2 rounded-md shadow-md text-xs">
-          <div className="font-bold mb-1">Trajets prioritaires:</div>
-          <div className="flex items-center gap-1 mb-1">
-            <span className="inline-block w-3 h-3 rounded-full bg-red-600"></span>
-            <span>1. Priorité haute</span>
-          </div>
-          <div className="flex items-center gap-1 mb-1">
-            <span className="inline-block w-3 h-3 rounded-full bg-orange-600"></span>
-            <span>2. Priorité moyenne</span>
-          </div>
-          <div className="flex items-center gap-1">
-            <span className="inline-block w-3 h-3 rounded-full bg-amber-600"></span>
-            <span>3. Priorité basse</span>
-          </div>
-        </div>
-      )}
 
       {/* Message d'erreur temporaire */}
       {errorMessage && (

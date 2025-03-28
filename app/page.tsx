@@ -92,9 +92,6 @@ export default function TCLSimulator() {
             <h1 className="text-2xl font-bold">Ecocity</h1>
             <p className="text-sm opacity-90">Optimisez les transports doux pour une ville plus verte</p>
           </div>
-          <div className="ml-auto flex items-center gap-2">
-            <div className="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">Version 1.0</div>
-          </div>
         </div>
       </header>
 
@@ -167,9 +164,6 @@ export default function TCLSimulator() {
                 Commencer la simulation
               </button>
 
-              <p className="text-xs text-center mt-4 text-slate-500">
-                Version 1.0 - Ecocity: Simulation urbaine écologique
-              </p>
             </div>
           </div>
         </div>
