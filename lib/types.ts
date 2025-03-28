@@ -1,0 +1,15 @@
+export enum TransportType {
+  BIKE_LANE = "BIKE_LANE",
+  PEDESTRIAN_PATH = "PEDESTRIAN_PATH",
+  SCOOTER_STATION = "SCOOTER_STATION",
+  LIGHT_RAIL = "LIGHT_RAIL",
+}
+
+export enum PointOfInterestType {
+  RESIDENTIAL = "RESIDENTIAL",
+  OFFICE = "OFFICE",
+  SCHOOL = "SCHOOL",
+  STATION = "STATION",
+  LEISURE = "LEISURE",
+}
+
